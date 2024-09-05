@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-outline {
+  -webkit-text-stroke: 3px black;
+  text-stroke: 3px black;
+  paint-order: stroke fill;
+}
