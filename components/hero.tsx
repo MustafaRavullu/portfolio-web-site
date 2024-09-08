@@ -3,7 +3,7 @@ import WordWithShadow from "./word-with-shadow";
 
 export default function Hero() {
   return (
-    <section className="flex justify-center items-center py-16 px-4 md:p-24 text-center border border-black flex-col gap-8 bg-white/50">
+    <section className="flex justify-center items-center py-16 px-4 md:p-12 text-center border border-black flex-col gap-6 bg-white/50">
       <div className="flex gap-8 justify-center w-full items-center uppercase text-xl">
         <span className="hidden lg:flex flex-1 justify-end">
           Crafting Functionality
@@ -26,7 +26,7 @@ export default function Hero() {
         Developer
       </h1>
       <div className="max-w-[500px] font-semibold text-3xl">
-        I create interactive, user-centric web experiences
+        I create interactive, user-centric web apps
       </div>
     </section>
   );

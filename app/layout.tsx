@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { public_sans } from "@/lib/fonts";
+import Header from "@/components/header";
+import Menu from "@/components/menu";
 
 export const metadata: Metadata = {
   title: "Mustafa Ravullu",
@@ -15,14 +17,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${public_sans.className} antialiased px-4 md:px-20 py-4 md:py-14 relative`}
+        className={`${public_sans.className} antialiased px-4 md:px-20 py-4 md:py-8 relative flex flex-col`}
       >
-        <div className="absolute inset-x-4 md:inset-x-20 inset-y-0 z-[-1] flex">
-          <div className="border-l flex-1"></div>
-          <div className="border-l flex-1 hidden md:flex"></div>
-          <div className="border-l flex-1 hidden md:flex"></div>
-          <div className="border flex-1"></div>
+        <div
+          className={`absolute inset-x-4 md:inset-x-20 inset-y-0 grid grid-cols-2 md:grid-cols-4 z-[-1] border-l border-r`}
+        >
+          <div className="border-r"></div>
+          <div className="border-r hidden md:flex"></div>
+          <div className="border-r hidden md:flex"></div>
+          <div></div>
         </div>
+        <Header />
+        <Menu />
         {children}
       </body>
     </html>
