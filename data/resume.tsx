@@ -1,3 +1,6 @@
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { GlobeIcon } from "lucide-react";
+
 export const DATA = {
   name: "Mustafa Ravullu",
   jobTitle: "Frontend Developer",
@@ -9,5 +12,32 @@ export const DATA = {
     "Next.js",
     "React Context API",
     "Firebase",
+  ],
+  projects: [
+    {
+      title: "PantriPal",
+      description:
+        "It is a recipe app that is built on top of spoonacular api. It helps you to find recipes based on available ingredients.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "Spoonacular Rest API",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://pantripal.vercel.app/",
+          icon: <GlobeIcon className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/MustafaRavullu/pantri-pal",
+          icon: <GitHubLogoIcon className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
   ],
 };
