@@ -39,5 +39,26 @@ export const DATA = {
       image: "",
       video: "",
     },
+    {
+      title: "ARC CRM",
+      description:
+        "It is my earliest project and my first freelance work. It is a workflow management application for a local textile company specializing in sweater production.",
+      technologies: [
+        "Next.js",
+        "Javascript",
+        "TailwindCSS",
+        "React Context API",
+        "PWA",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/MustafaRavullu/arc-crm-v",
+          icon: <GitHubLogoIcon className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
   ],
 };

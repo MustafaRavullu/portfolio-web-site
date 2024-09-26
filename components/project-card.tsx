@@ -31,11 +31,11 @@ export default function ProjectCard({
   video,
 }: Props) {
   return (
-    <Card className="overflow-hidden shadow-none hover:shadow-lg transition-all ease-out duration-300">
-      <div className="text-white w-full h-40 bg-red-500 flex justify-center items-center">
+    <Card className="overflow-hidden shadow-none hover:shadow-lg transition-all ease-out duration-300 h-full flex flex-col">
+      <div className="text-white w-full h-40 bg-gray-500 flex justify-center items-center">
         Placeholder
       </div>
-      <CardHeader className="p-2">
+      <CardHeader className="p-2 flex-1">
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
