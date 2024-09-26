@@ -3,7 +3,7 @@ import ProjectCard from "./project-card";
 
 export default function Projects() {
   return (
-    <section className="space-y-2">
+    <section className="space-y-2 pb-20">
       <h2 className="text-xl font-bold">Projects</h2>
       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {DATA.projects.map((project, index) => (
